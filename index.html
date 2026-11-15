@@ -4,26 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi portafolio | Valentina Ramírez</title>
+    <meta name="description"
+        content="Portafolio de Valentina Ramírez, desarrolladora web. Proyectos con HTML, CSS, Bootstrap y Tailwind.">
+    <title>Valentina Ramírez | Desarrolladora web</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header class="header" id="header">
         <div class="menu">
-            <a href="#" class="logo">Valen</a>
+            <a href="#inicio" class="logo">Valen</a>
             <input type="checkbox" id="menu">
             <label for="menu">
-                <img src="img/menu.png" class="menu-icon" alt="icono-menú">
+                <img src="img/menu.png" class="menu-icon" alt="Abrir menú">
             </label>
-            <nav class="navbar">
+            <nav class="navbar" aria-label="Principal">
                 <ul>
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#sobre-mi">Sobre mí</a></li>
-                    <li><a href="#habilidades">Habilidades</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                     <li><a href="#proyectos" class="proye">Proyectos</a></li>
                 </ul>
@@ -32,20 +35,23 @@
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero" id="inicio">
             <div class="content">
                 <div class="content-text">
-                    <h1>Hola, soy <span>Valentina Ramírez</span></h1>
-                    <h2>Soy <span>CODER</span></h2>
-                    <p>Construyo experiencias web atractivas y funcionales. Apasionada por el código limpio, el diseño
-                        intuitivo y la creación de soluciones digitales que marcan la diferencia.</p>
+                    <span class="role">Desarrolladora web</span>
+                    <h1>Hola, soy <em>Valentina Ramírez</em></h1>
+                    <p>Construyo experiencias web atractivas y funcionales. Me apasionan el código limpio, el diseño
+                        intuitivo y las soluciones digitales que marcan la diferencia.</p>
 
-                    <div class="icons">
-                        <a href="https://github.com/BlairSawyer17" target="_blank"><img src="img/GitHub.png" alt="Github-logo"></a>
-                        <a href="#" target="_blank"><img src="img/Discord.png" alt="Discord-logo"></a>
+                    <div class="hero-actions">
+                        <a href="#" class="boton">Descargar CV</a>
+                        <div class="icons">
+                            <a href="https://github.com/BlairSawyer17" target="_blank" rel="noopener"
+                                aria-label="GitHub"><img src="img/GitHub.png" alt="GitHub"></a>
+                            <a href="#" target="_blank" rel="noopener" aria-label="Discord"><img src="img/Discord.png"
+                                    alt="Discord"></a>
+                        </div>
                     </div>
-
-                    <a href="#" class="boton">Descarga mi CV</a>
                 </div>
 
                 <div class="content-image">
@@ -56,39 +62,142 @@
             </div>
         </section>
 
-        <section class="container container-proyectos" id="proyectos">
-            <h2>Mis Proyectos</h2>
-            <div>
-                <article class="proyecto">
-                    <img src="./img/ConejitoLilas.png" alt="">
-                    <div>
-                        <h3>Rueda Libre</h3>
-                        <p>Desarrollo trayecto-1</p>
-                        <a href="https://github.com/BlairSawyer17/RuedaLibre" target="_blank">Repositorio</a>
-                    </div>
-                </article>
-
-                <article class="proyecto">
-                    <img src="./img/gatito.png" alt="">
-                    <div>
-                        <h3>Rueda Libre Bootstrap</h3>
-                        <p>Desarrollo Trayecto-1</p>
-                        <a href="https://github.com/BlairSawyer17/RuedaLibre-Bootstrap" target="_blank">Repositorio</a>
-                    </div>
-                </article>
-
-                <article class="proyecto">
-                    <img src="./img/ConejitoLilas2.png" alt="">
-                    <div>
-                        <h3>Algoritmia Trayecto 1</h3>
-                        <p>Ejercicios de algoritmia</p>
-                        <a href="https://github.com/BlairSawyer17/AlgoritmiaT1" target="_blank">Repositorio</a>
-                    </div>
-                </article>
+        <section class="section" id="sobre-mi">
+            <h2 class="section-title">Sobre mí</h2>
+            <div class="about">
+                <div>
+                    <p>Soy estudiante de desarrollo web y disfruto convertir ideas en páginas claras, suaves y fáciles
+                        de usar.</p>
+                    <p>Cuido los detalles: el espacio, el color y la tipografía importan tanto como el código que los
+                        sostiene.</p>
+                </div>
+                <div>
+                    <ul class="skills" aria-label="Habilidades">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Bootstrap</li>
+                        <li>Tailwind</li>
+                        <li>Git y GitHub</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
+        <section class="section" id="proyectos">
+            <div class="projects-box">
+                <h2 class="section-title">Mis proyectos</h2>
+                <p class="section-intro">Trabajos del primer trayecto de formación, con el código y la versión en línea
+                    de cada uno.</p>
+
+                <div class="projects-grid">
+                    <article class="proyecto">
+                        <img src="./img/ConejitoLilas.png"
+                            alt="Ilustración de un conejito lila">
+                        <div class="proyecto-info">
+                            <h3>Rueda Libre</h3>
+                            <p>Desarrollo del trayecto 1.</p>
+                            <ul class="tags">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                            </ul>
+                            <div class="links-proyecto">
+                                <a class="link-repo" href="https://github.com/BlairSawyer17/RuedaLibre" target="_blank"
+                                    rel="noopener">Repositorio</a>
+                                <a class="link-page" href="https://blairsawyer17.github.io/RuedaLibre/"
+                                    target="_blank" rel="noopener">GitHub Pages</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="proyecto">
+                        <img src="./img/gatito.png" alt="Ilustración de un gatito">
+                        <div class="proyecto-info">
+                            <h3>Rueda Libre con Bootstrap</h3>
+                            <p>Desarrollo del trayecto 1.</p>
+                            <ul class="tags">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                            <div class="links-proyecto">
+                                <a class="link-repo" href="https://github.com/BlairSawyer17/RuedaLibre-Bootstrap"
+                                    target="_blank" rel="noopener">Repositorio</a>
+                                <a class="link-page" href="https://blairsawyer17.github.io/RuedaLibre-Bootstrap/"
+                                    target="_blank" rel="noopener">GitHub Pages</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="proyecto">
+                        <img src="./img/ConejitoLilas.png"
+                            alt="Ilustración de un conejito lila">
+                        <div class="proyecto-info">
+                            <h3>Rueda Nocturna</h3>
+                            <p>Desarrollo del trayecto 1.</p>
+                            <ul class="tags">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Tailwind</li>
+                            </ul>
+                            <div class="links-proyecto">
+                                <a class="link-repo" href="https://github.com/BlairSawyer17/RuedaLibre-Tailwind"
+                                    target="_blank" rel="noopener">Repositorio</a>
+                                <a class="link-page" href="https://blairsawyer17.github.io/RuedaLibre-Tailwind/"
+                                    target="_blank" rel="noopener">GitHub Pages</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="proyecto">
+                        <img src="./img/ConejitoLilas2.png"
+                            alt="Ilustración de un conejito lila para los ejercicios de algoritmia">
+                        <div class="proyecto-info">
+                            <h3>Algoritmia - Trayecto 1</h3>
+                            <p>Ejercicios de algoritmia.</p>
+                            <ul class="tags">
+                                <li>PSeInt</li>
+                                <li>JavaScript</li>
+                            </ul>
+                            <div class="links-proyecto">
+                                <a class="link-repo" href="https://github.com/BlairSawyer17/AlgoritmiaT1"
+                                    target="_blank" rel="noopener">Repositorio</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="proyecto">
+                        <img src="./img/gatito.png"
+                            alt="Ilustración de un conejito lila para los ejercicios de algoritmia">
+                        <div class="proyecto-info">
+                            <h3>IA - Trayecto 1</h3>
+                            <p>Ejercicios de algoritmia.</p>
+                            <ul class="tags">
+                                <li>Lovable</li>
+                                <li>Chat-GPT</li>
+                            </ul>
+                            <div class="links-proyecto">
+                                <a class="link-repo" href="https://github.com/BlairSawyer17/AI-Trayecto1"
+                                    target="_blank" rel="noopener">Repositorio</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contacto">
+            <div class="contact">
+                <h2 class="section-title">Hablemos</h2>
+                <p class="section-intro">¿Tienes una idea o una oportunidad? Escríbeme y te respondo pronto.</p>
+                <a href="mailto:valenrv.17@gmail.com" class="boton">Escribirme un correo</a>
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <p>Valentina Ramírez | <a href="mailto:valenrv.17@gmail.com">valenrv.17@gmail.com</a> | 2026</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
