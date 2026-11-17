@@ -264,7 +264,6 @@ h3 {
     width: 50%;
     display: flex;
     justify-content: center;
-    animation: float 4s ease-in-out infinite;
 
     .linea {
         width: 70%;
@@ -466,10 +465,6 @@ footer a {
 }
 
 @media (prefers-reduced-motion: reduce) {
-    html {
-        scroll-behavior: auto;
-    }
-
     * {
         animation: none !important;
         transition: none !important;
